@@ -54,7 +54,18 @@ KeyboardInputManager.prototype.listen = function () {
     var modifiers = event.altKey || event.ctrlKey || event.metaKey ||
                     event.shiftKey;
     var mapped    = map[event.which];
-
+    if (event.key === 'ArrowUp') {
+       mapped = 0;
+    }
+    if (event.key === 'ArrowDown') {
+       mapped = 2;
+    }
+    if (event.key === 'ArrowRight') {
+       mapped = 1;
+    }
+    if (event.key === 'ArrowLeft') {
+       mapped = 3;
+    }
     if (!modifiers) {
       if (mapped !== undefined) {
         event.preventDefault();

@@ -1,0 +1,17 @@
+{
+  "name": "2048_web",
+  "description": "We all know what the meaning of 2048 in gaming world ! right? I believe most of you played it and i also believe many of you also starting to think about this one that what is this again same kind of 2048 stuff.But this one is different.It's the reverse 2048 game where you have to make 1 in order to win",
+  "launch_path": "/index.html",
+  "icons": {
+    "16": "/icons/icon16x16.png",
+    "48": "/icons/icon48x48.png",
+    "60": "/icons/icon60x60.png",
+    "128": "/icons/icon128x128.png"
+  },"developer": {
+    "name": "ronny",
+    "url": "http://ronny.com"
+  },
+  "default_locale": "en",
+  "installs_allowed_from": ["*"],
+  "version": "1.1"
+}
