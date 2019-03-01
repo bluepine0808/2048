@@ -66,6 +66,18 @@ KeyboardInputManager.prototype.listen = function () {
     if (event.key === 'ArrowLeft') {
        mapped = 3;
     }
+    if (event.key === 'SoftLeft') {
+        event.preventDefault();
+       self.emit("keepPlaying");
+    }
+    if (event.key === 'SoftRight') {
+        event.preventDefault();
+       self.emit("restart");
+    }
+    if (event.key === 'Enter') {
+        event.preventDefault();
+       self.emit("restart");
+    }
     if (!modifiers) {
       if (mapped !== undefined) {
         event.preventDefault();
